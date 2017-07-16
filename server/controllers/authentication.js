@@ -68,7 +68,7 @@ module.exports = {
             const phoneNo = /^\+[1-9]{1}[0-9]{3,14}$/
 
             if (email_filter.test(user.email)) {
-                if (this.state.user.phoneNumber.match(phoneNo )) {
+                if (user.phoneNumber.match(phoneNo )) {
 
                     if (password_filter.test(user.password)) {
                         User.findOne({ email: user.email }, function (err, currentUser) {
