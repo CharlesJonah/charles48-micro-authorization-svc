@@ -8,6 +8,5 @@ module.exports = mongoose.model('User', new Schema({
     last_name: String,
     password: String,
     email: String,
-    country: String,
     phone: String
 }));
