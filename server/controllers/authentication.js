@@ -62,7 +62,7 @@ module.exports = {
         }
     },
     register(user, res) {
-        if (user.email && user.firstName && user.lastName && user.password && user.country && user.phoneNumber) {
+        if (user.email && user.firstName && user.lastName && user.password && user.phoneNumber) {
             var email_filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             var password_filter = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}/
             const phoneNo = /^\+[1-9]{1}[0-9]{3,14}$/
