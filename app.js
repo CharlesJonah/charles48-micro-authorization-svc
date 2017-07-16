@@ -25,7 +25,6 @@ var bodyParser = require('body-parser');
 var app = express();
 var apiRoutes = express.Router();
 var authentication = require('./server/controllers/authentication');
-var product = require('./server/controllers/product');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
